@@ -19,6 +19,14 @@ p{
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(66, 66, 65);
 }
+.h1{
+    font-size: 2.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+hr{
+    margin: 50px auto;
+    color: rgba(204, 199, 199, 0.8);
+}
 /* nav style starts here */
 nav{
     display: flex;
@@ -111,10 +119,6 @@ nav{
     justify-content: space-between;
     margin:60px 0;
 }
-.section-2__desc h1{
-    font-size: 2.5rem;
-    font-family: Arial, Helvetica, sans-serif;
-}
 .section-2__desc ul{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 1.2rem;
@@ -128,6 +132,173 @@ nav{
 }
 /* section 2 ends here */
 
+/* section 3 starts here */
+.section-3{
+    text-align: center;
+}
+.section-3 h1{
+    margin-bottom: 10px;
+}
+.section-3__img1{
+    background-image: url(Rectangle\ 5.png);
+    border-radius: 17px;
+}
+.section-3__img2 {
+    background-image: url(Rectangle\ 8.png);
+    border-radius: 17px;
+}
+.section-3__img3 {
+    background-image: url(Rectangle\ 6.png);
+    border-radius: 17px;
+}
+.section-3__img4 {
+    background-image: url(Rectangle\ 7.png);
+    border-radius: 17px;
+}
+.section-3__img5 {
+    background-image: url(Rectangle\ 9.png);
+    border-radius: 17px;
+}
+.section-3__img6 {
+    background-image: url(Rectangle\ 11.png);
+    border-radius: 17px;
+}
+.section-3__img7 {
+    background-image: url(Rectangle\ 10.png);
+    border-radius: 17px;
+}
+.section-3__h1{
+    margin: 135px auto;
+    color: azure;
+    text-shadow: 2px 3px 2px black;
+}
+#section-3__imgsec1{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 573px 573px;
+    gap: 20px;
+    height: 300px;
+}
+#section-3__imgsec2{
+    display: grid;
+    grid-template-columns: 374px 474px 274px;
+    gap: 20px;
+    height: 286px;
+    margin: 20px auto;
+}
+#section-3__imgsec3{
+    display: grid;
+    grid-template-columns: 473px 673px;
+    gap: 20px;
+    height: 300px;
+}
+
+/* section 3 ends here */
+/* section 4 starts here */
+.section-4{
+    text-align: center;
+}
+.section-4 h1{
+    margin:50px auto 15px;
+}
+.section-4__1st{
+    display:flex;
+    justify-content: space-between;
+}
+.section-4__desc{
+    height: 150px;
+    width: 450px;
+    background: rgba(204, 196, 196, 0.1);
+    border: 2px solid rgb(176, 166, 166, .5);
+    border-radius: 10px;
+    padding: 50px;
+    margin: 30px auto;
+    text-align: left;
+}
+.section-4__desc h3{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(27, 20, 11);
+    margin: 10px 0;
+}
+
+/* section 4 ends here */
+/* section 5 starts here */
+.section-5{
+    display: flex;
+    margin: 20px auto;
+}
+.section-5 p{
+    margin: 15px auto;
+}
+.section-5 ul{
+    margin: 20px 30px;
+}
+.section-5> img{
+    border-radius: 15px;
+    width: 550;
+    height: 400px;
+}
+/* section 5 ends here */
+/* section 6 starts here */
+.section-6{
+    display: flex;
+    justify-content: space-between;
+}
+.newsletter{
+    border: 2px solid tomato;
+    border-radius: 15px;
+    padding: 25px;
+    width: 38%;
+}
+.newsletter> input,button{
+    width: 90%;
+    padding: 10px;
+    border-radius: 10px;
+    border: .5px solid rgb(73, 65, 65);
+    margin-bottom: 15px;
+}
+.section-6__img{
+    display: block;
+    width: 55%;
+    text-align: right;
+    background-image: url(Rectangle\ 8\ \(1\).png);
+    border-radius: 15px;
+}
+.section-6__discount{
+    background: tomato;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px;
+    width: 32%;
+    border-radius: 15px;
+    margin: 250px 0 0 350px;
+    text-align: center;
+    transform: rotate(-20deg);
+}
+
+/* section 6 ends here */
+/* footer section starts here */
+footer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px auto;
+    margin-bottom: 50px;
+}
+.footer-title{
+    margin: 20px auto;
+}
+.footer-icon{
+    border-bottom: .8px solid rgb(92, 86, 86);
+    margin-bottom: 50px;
+}
+.footer-icon i{
+    font-size: 2rem;
+    margin: 30px 30px;
+    cursor: pointer;
+}
+
+/* footer section ends here */
 
 
 
@@ -140,6 +311,7 @@ nav{
 @media screen and (max-width: 600px) {
     body{
         max-width: 600px;
+        margin: 0;
     }
     nav{
         max-width: 600px;
@@ -178,4 +350,62 @@ nav{
     .section-2__img{
         text-align: center;
     }
+    /* responsive section 3starts here  */
+    .section-3{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    #section-3__imgsec1{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    #section-3__imgsec2{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    #section-3__imgsec3{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    /* responsive section 4 starts here */
+    .section-4{
+        margin-top: 150px;
+    }
+    .section-4__1st{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    /* responsive section 4 endss here */
+    /* responsive section 5 starts here */
+    .section-5{
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+    }
+    /* responsive section 5 ends here */
+    /* responsive section 6 starts here */
+    .section-6{
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+    }
+    .newsletter{
+        width: 90%;
+        margin: 20px auto;
+    }
+    .section-6__img{
+        width: 100%;
+        height: 300px;
+    }
+    .section-6__discount{
+        width: 35%;
+        margin: 180px 0 0 250px;
+    }
+    /* responsive section 6 ends here */
+
 }

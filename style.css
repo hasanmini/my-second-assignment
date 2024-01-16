@@ -52,6 +52,9 @@ nav{
     color: tomato;
     text-shadow: 1px .5px rgb(48, 41, 39);
 }
+#nav-icon{
+    display: none;
+}
 .nav-list{
     display: flex;
     align-items: center;
@@ -133,44 +136,15 @@ nav{
 /* section 2 ends here */
 
 /* section 3 starts here */
+
 .section-3{
     text-align: center;
 }
 .section-3 h1{
     margin-bottom: 10px;
 }
-.section-3__img1{
-    background-image: url(Rectangle\ 5.png);
-    border-radius: 17px;
-}
-.section-3__img2 {
-    background-image: url(Rectangle\ 8.png);
-    border-radius: 17px;
-}
-.section-3__img3 {
-    background-image: url(Rectangle\ 6.png);
-    border-radius: 17px;
-}
-.section-3__img4 {
-    background-image: url(Rectangle\ 7.png);
-    border-radius: 17px;
-}
-.section-3__img5 {
-    background-image: url(Rectangle\ 9.png);
-    border-radius: 17px;
-}
-.section-3__img6 {
-    background-image: url(Rectangle\ 11.png);
-    border-radius: 17px;
-}
-.section-3__img7 {
-    background-image: url(Rectangle\ 10.png);
-    border-radius: 17px;
-}
-.section-3__h1{
-    margin: 135px auto;
-    color: azure;
-    text-shadow: 2px 3px 2px black;
+#section-3__responsive{
+    display: none;
 }
 #section-3__imgsec1{
     margin-top: 30px;
@@ -192,8 +166,21 @@ nav{
     gap: 20px;
     height: 300px;
 }
-
+.section-3__img{
+    display: block;
+    position: relative;
+}
+.section-3__img >h1{
+    position: absolute;
+    top: 45%;
+    right: 35%;
+    color: azure;
+    text-shadow: 2px 1px 2px black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2.2rem;
+}
 /* section 3 ends here */
+
 /* section 4 starts here */
 .section-4{
     text-align: center;
@@ -317,9 +304,14 @@ footer{
         max-width: 600px;
         
     }
-    /* #nav-icon{
-        display:block;
-    } */
+    .nav-list{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-list>li{
+        font-size: .8rem;
+        margin: 5px 20px 0 0;
+    }
     .section-1{
         width: 600px;
         display: block;
@@ -352,25 +344,24 @@ footer{
     }
     /* responsive section 3starts here  */
     .section-3{
-        display: flex;
+        display: block;
         flex-direction: column;
-        height: auto;
+        height: auto; 
     }
-    #section-3__imgsec1{
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
+    #section-3__imgs{
+        display: none;
     }
-    #section-3__imgsec2{
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
+    #section-3__responsive{
+        display: block;
     }
-    #section-3__imgsec3{
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
+    .section-3__img> img{
+        margin: 20px auto;
+        display: block;
+        height: 300px; 
+        width: 500px;
+        border-radius: 15px;
     }
+
     /* responsive section 4 starts here */
     .section-4{
         margin-top: 150px;

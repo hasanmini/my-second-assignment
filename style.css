@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.btn{
+    background: tomato;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-left: 20px;
+    max-width: 100px;
+}
+/* nav style starts here */
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+}
+.title{
+    display: flex;
+    align-items: center;
+    padding: 5px 5px;
+}
+.title img{
+    padding: 5px;
+    width: 50px;
+    height: 40px;
+}
+.title h1{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    margin-left: 5px;
+}
+.title h1> span{
+    color: tomato;
+    text-shadow: 1px .5px rgb(48, 41, 39);
+}
+.nav-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+}
+.nav-list li{
+    margin: 27px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+.nav-list li:first-child{
+    color: tomato;
+}
+
+/* nav style ends here */
+
+/* main section starts here */
+/* section 1 starts here */
+.section-1{
+    background-image: url(Group\ 13\ \(1\)\ \(1\).png);
+    height: 500px;
+    width: 1170px;
+    border-radius: 15px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 40px;
+}
+.section-1> h1{
+    color: rgb(86, 88, 88);
+    font-size: 2.8rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 140px 0 20px;
+    text-shadow: 1.2px 1px tomato;
+}
+.section-1 p{
+    color: rgb(250, 250, 249);
+    background-color: rgba(81, 73, 73, 0.4);
+    max-width: 40%;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+.section-1__options{
+    background-color: rgba(205, 200, 200, 0.4);
+    margin: 100px 300px;
+    width: 45%;
+    padding: 20px;
+    border-radius: 10px;
+}
+.section-1__option{
+    font-size: 1.1rem;
+    border-radius: 5px;
+    width: 125px;
+    text-decoration: none;
+    color: rgb(72, 68, 68);
+    padding: 5px;
+    border: none;
+}
+
+
+
+
+
+
+
+
+
+/* responsive style starts here */
+@media screen and (max-width: 600px) {
+    body{
+        max-width: 600px;
+    }
+    nav{
+        max-width: 600px;
+        
+    }
+    /* #nav-icon{
+        display:block;
+    } */
+    .section-1{
+        width: 600px;
+        display: block;
+    }
+    .section-1__options{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        margin: 10px auto;
+        padding: 10px;
+    }
+    .section-1__option{
+        margin: 10px auto;
+        width: 80%;
+    }
+    .section-1__options> button{
+        margin: 0 auto;
+    }
+}
